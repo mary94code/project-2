@@ -39,21 +39,22 @@
 }
 
 .header-ul {
-    position: absolute;
+    /* position: absolute;
     top: 50px;
-    right: 25px;
+    right: 25px; */
     background-color: #ebe8e8;
-  
     padding: 20px;
 
 }
 
-.header-element{
+.header-element {
     color: #5C5C5C;
 }
-.header-element:hover{
-    color:#57A4A4;
+
+.header-element:hover {
+    color: #57A4A4;
 }
+
 .main-img {
     padding-top: 83px;
     margin-bottom: 38px;
@@ -69,6 +70,12 @@
 .hamburger i {
     font-size: 30px;
     cursor: pointer;
+}
+.hamburger_openned {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 30px;
 }
 
 /*recent posts styles*/
@@ -208,10 +215,23 @@ footer {
 
     }
 
+    .hamburger {
+        display: none;
+    }
+    
+    
+
+    .header_outer {
+        margin-bottom: -60px;
+        display: flex!important;
+        justify-content: center;
+    }
+
     .header-ul {
         display: flex;
         justify-content: center;
-        margin-top: 41px;
+        /* margin-top: -41px; */
+        background: none;
     }
 
     .header-element {
